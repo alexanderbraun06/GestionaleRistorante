@@ -1,12 +1,13 @@
-﻿namespace GestionaleRistorante.Data
+﻿using GestionaleRistorante.Data;
+
+namespace GestionaleRistorante.Dto
 {
-    public class Cliente
+    public class ClienteDto
     {
         public int Id { get; set; }
         public int IdCliente { get; set; }
         public string Nome { get; set; }
         public string Cognome { get; set; }
-        public DateOnly DataNascita {  get; set; }
         public List<Ordine> Ordini = [];
         public List<Prodotto> Prodotti = [];
     }

@@ -8,5 +8,6 @@
         public Cliente Cliente { get; set; }
         public List<Prodotto> Prodotti = [];
         public double Totale { get; set; }
+        public object Ordini { get; internal set; }
     }
 }
